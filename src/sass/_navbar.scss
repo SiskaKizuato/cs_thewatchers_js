@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.align{
+    align-items: center;
+
+}
 
 p{
     margin: 0;
@@ -23,6 +33,13 @@ nav{
     align-items: center;
     padding-left: 70px;
     padding-right: 20px;
+}
+.leftPartNav{
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .midPartNav{
     display: flex;
@@ -205,3 +222,38 @@ a{
 .containerDdPages{
     display: none;
 }
+
+
+/* dark mode white mode */
+.btn-mode{
+    height: 40px;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+.barre{
+    border: 1px solid black;
+    height: 13px;
+    width: 25px;
+    box-sizing: border-box;
+    justify-content: right;
+    border-radius: 7px;
+    background-color: #f61f1f;
+    box-shadow: inset 2px 2.5px 1px #a02424ca;
+}
+
+.boule{
+    border: 1px solid black;
+    height: 17px;
+    width: 17px;
+    border-radius: 50px;
+    background-color: #f0cdbd;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    right: -1px;
+    box-shadow: 1px 0.5px 2px black;
+}
+
+
+
