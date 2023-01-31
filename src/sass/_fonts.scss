@@ -27,6 +27,28 @@ nav{
     font-size: 12px;
 }
 
+.newArrivals{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color:rgba(3, 6, 46, 0.913);
+
+}
+
+.nomArticleS2{
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color:rgba(3, 6, 46, 0.79);
+    font-size: 20px;
+}
+
+.prixS2{
+    color: #f61f1f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
 // responsive 
     // tablette
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -34,7 +56,16 @@ nav{
         font-size: 60px;
     }
 }
-
+    // mobile L
+@media screen and (min-width: 425px) and (max-width: 727px){
+    .select {
+        font-size: 30px;   
+        line-height: 55px;
+    }
+    .loremS1{
+        line-height: 30px;
+    }
+}
     // mobile M
 @media screen and (min-width: 374px) and (max-width: 424px){
     .select {

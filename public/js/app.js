@@ -148,6 +148,61 @@ containerDdPages.addEventListener('mouseout', function () {
 });
 
 
+
+
+// creation section 2
+let section2 = document.querySelector(".section2");
+
+let containerS2 = document.createElement("div");
+containerS2.classList.add("containerS2");
+section2.appendChild(containerS2);
+
+let containerArrivals = document.createElement("div");
+containerArrivals.classList.add("containerArrivals");
+containerS2.appendChild(containerArrivals);
+
+let newArrivals = document.createElement("p");
+newArrivals.classList.add("newArrivals");
+newArrivals.innerHTML = "New Arrivals";
+containerArrivals.appendChild(newArrivals);
+
+let container3img = document.createElement("div");
+container3img.classList.add("container3img");
+containerS2.appendChild(container3img);
+
+for (let i = 1; i <= 3; i++) {
+    let containerImgPrix = document.createElement("div");
+    containerImgPrix.classList.add("containerImgPrix");
+    container3img.appendChild(containerImgPrix);
+
+    let videS2 = document.createElement("div");
+    videS2.classList.add("videS2");
+    containerImgPrix.appendChild(videS2);
+
+    let cadreImgS2 = document.createElement("div");
+    cadreImgS2.classList.add("cadreImgS2");
+    cadreImgS2.classList.add("product" + i);
+    containerImgPrix.appendChild(cadreImgS2);
+
+    let txtS2 = document.createElement("div");
+    txtS2.classList.add("txtS2");
+    containerImgPrix.appendChild(txtS2);
+
+    let nomArticleS2 = document.createElement("p");
+    nomArticleS2.classList.add("nomArticleS2");
+    nomArticleS2.innerHTML = "Thermo Ball Etip Gloves";
+    txtS2.appendChild(nomArticleS2);
+
+    let prixS2 = document.createElement("p");
+    prixS2.classList.add("prixS2");
+    prixS2.innerHTML = "$ 45,743";
+    txtS2.appendChild(prixS2);
+}
+
+document.body.appendChild(section2);
+
+
+
 // mode lightdark
 const barre = document.getElementsByClassName('barre')[0]
 
