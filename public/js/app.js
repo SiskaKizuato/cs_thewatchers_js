@@ -167,6 +167,7 @@ const a = document.getElementsByTagName('a')
 let modeBlanc = true;
 
 boule.addEventListener('click', () => {
+    // navbar
     modeBlanc = !modeBlanc;
     document.body.style.backgroundColor = modeBlanc ? 'white' : 'black';
     barre.style.backgroundColor = modeBlanc ? '#a02424ca' : 'rgb(135, 206, 235)'
@@ -183,7 +184,17 @@ boule.addEventListener('click', () => {
     for (let i = 0; i < a.length; i++) {
         a[i].classList.toggle('lightmode')
     }
-    boule.style.float = modeBlanc ? 'right' : 'left'
+    boule.style.float = modeBlanc ? 'right' : 'left';
+
+    // section 1
+    const bgGrey = document.querySelectorAll('.bgGrey')
+    bgGrey[0].style.backgroundColor = modeBlanc ? '#f0f0f2' : '#4a4a4b'
+    const select = document.getElementsByClassName('select')[0]
+    select.style.color = modeBlanc ? 'black' : 'white'
+    const loremS1 = document.getElementsByClassName('loremS1')[0]
+    loremS1.style.color = modeBlanc ? 'black' : 'white'
+    const bgBlack = document.querySelectorAll('.bgBlack')
+    bgBlack[0].style.backgroundColor = modeBlanc ? '#4a4a4b' : 'black'
 });
 
 // icon nav hover en mode dark

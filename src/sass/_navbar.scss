@@ -161,7 +161,7 @@ a{
     display: block;
 }
 .linkNavWhite{
-    color: red;
+    color: #f61f1f;
     display: none;
 }
 
@@ -173,7 +173,7 @@ a{
 
 .test:hover +
 .linkNav{
-    color: red;
+    color: #f61f1f;
 }
 
 .lightmode{
@@ -184,6 +184,11 @@ a{
     position: absolute;
     width: 60px;
     height: 80px;
+}
+
+.shopNow:hover{
+    color: #f61f1f;
+    cursor: pointer;
 }
 
 .midNavBtnAbout{
