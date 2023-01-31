@@ -152,6 +152,8 @@ containerDdPages.addEventListener('mouseout', function () {
 
 // creation section 2
 let section2 = document.querySelector(".section2");
+let section3 = document.querySelector(".section3");
+
 
 let containerS2 = document.createElement("div");
 containerS2.classList.add("containerS2");
@@ -258,6 +260,7 @@ boule.addEventListener('click', () => {
     premierNom.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
     deuxiemeNom.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
     troisiemeNom.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    section3.style.backgroundColor = modeBlanc ? 'white' : '#4a4a4bd'
 });
 
 // icon nav hover en mode dark

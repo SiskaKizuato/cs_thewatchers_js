@@ -713,9 +713,68 @@ a {
 }
 
 .section3 {
-  border: 1px solid blue;
   width: 100%;
   height: 575px;
+  display: flex;
+  gap: 23px;
+  box-sizing: border-box;
+}
+
+.s3LeftPart {
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  background-image: url("../../public/img/gallery1.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 130%;
+}
+
+.s3RightPart {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  gap: 23px;
+  box-sizing: border-box;
+}
+
+.s3RightPartA {
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  background-image: url("../../public/img/gallery2.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 130%;
+}
+
+.s3RightPartB {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  box-sizing: border-box;
+}
+
+.s3RightPartBup {
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../../public/img/gallery3.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 130%;
+}
+
+.s3RightPartBDown {
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../../public/img/gallery4.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 130%;
 }
 
 /*!
