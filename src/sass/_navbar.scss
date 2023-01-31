@@ -148,13 +148,55 @@ a{
     display: none;
 }
 .midNavBtn{
-    border: 1px solid  black;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+.midNavBtnHome{
+    position: absolute;
+    width: 73px;
+    height: 80px;
+}
+
+.midNavBtnShop{
+    position: absolute;
+    width: 60px;
+    height: 80px;
+}
+
+.midNavBtnAbout{
+    position: absolute;
+    width: 70px;
+    height: 80px;
+}
+
+.midNavBtnLatest{
+    position: absolute;
+    width: 73px;
+    height: 80px;
+}
+
+.midNavBtnBlog{
+    position: absolute;
+    width: 60px;
+    height: 80px;
+}
+
+.midNavBtnPages{
+    position: absolute;
+    width: 70px;
+    height: 80px;
+}
+
+
+.midNavBtnContact{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
 
 .triangleBlog {
     width: 0;

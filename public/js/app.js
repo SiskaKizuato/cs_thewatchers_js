@@ -1,8 +1,51 @@
-const nav = document.getElementsByTagName('nav');
+// hover color red  btn Nav sans Dd
+const midNavBtnHome = document.querySelector('.midNavBtnHome')
+const btnHome = document.querySelector('.btnHome');
+
+const midNavBtnShop = document.querySelector('.midNavBtnShop')
+const btnShop = document.querySelector('.btnShop');
+
+const midNavBtnAbout = document.querySelector('.midNavBtnAbout')
+const btnAbout = document.querySelector('.btnAbout');
+
+const midNavBtnContact = document.querySelector('.midNavBtnContact')
+const btnContact = document.querySelector('.btnContact');
+
+
+midNavBtnHome.addEventListener('mouseover', function (){
+    btnHome.style.color = '#f61f1f'
+})
+midNavBtnHome.addEventListener('mouseout', function (){
+    btnHome.style.color = 'black'
+})
+
+midNavBtnShop.addEventListener('mouseover', function (){
+    btnShop.style.color = '#f61f1f'
+})
+midNavBtnShop.addEventListener('mouseout', function (){
+    btnShop.style.color = 'black'
+})
+
+midNavBtnAbout.addEventListener('mouseover', function (){
+    btnAbout.style.color = '#f61f1f'
+})
+
+midNavBtnAbout.addEventListener('mouseout', function (){
+    btnAbout.style.color = 'black'
+})
+
+midNavBtnContact.addEventListener('mouseover', function (){
+    btnContact.style.color = '#f61f1f'
+})
+
+midNavBtnContact.addEventListener('mouseout', function (){
+    btnContact.style.color = 'black'
+})
 
 // dropdown Latest
 const containerDdLatest = document.querySelector('.containerDdLatest');
 const btnLatest = document.querySelector('.btnLatest');
+const midNavBtnLatest = document.querySelector('.midNavBtnLatest')
 
 btnLatest.addEventListener('mouseover', function () {
     containerDdLatest.style.display = 'block';
@@ -13,6 +56,16 @@ btnLatest.addEventListener('mouseover', function () {
 btnLatest.addEventListener('mouseout', function () {
     containerDdLatest.style.display = 'block';
 });
+
+midNavBtnLatest.addEventListener('mouseover', function (){
+    containerDdLatest.style.display = 'block'
+    btnLatest.style.color = '#f61f1f'
+})
+
+midNavBtnLatest.addEventListener('mouseout', function (){
+    containerDdLatest.style.display = 'none'
+    btnLatest.style.color = 'black'
+})
 
 containerDdLatest.addEventListener('mouseover', function () {
     containerDdLatest.style.display = 'block';
@@ -28,6 +81,7 @@ containerDdLatest.addEventListener('mouseout', function () {
 // dropdown Blog
 const containerDdBlog = document.querySelector('.containerDdBlog');
 const btnBlog = document.querySelector('.btnBlog');
+const midNavBtnBlog = document.querySelector('.midNavBtnBlog')
 
 btnBlog.addEventListener('mouseover', function () {
     containerDdBlog.style.display = 'block';
@@ -38,6 +92,16 @@ btnBlog.addEventListener('mouseover', function () {
 btnBlog.addEventListener('mouseout', function () {
     containerDdBlog.style.display = 'block';
 });
+
+midNavBtnBlog.addEventListener('mouseover', function (){
+    containerDdBlog.style.display = 'block'
+    btnBlog.style.color = '#f61f1f'
+})
+
+midNavBtnBlog.addEventListener('mouseout', function (){
+    containerDdBlog.style.display = 'none'
+    btnBlog.style.color = 'black'
+})
 
 containerDdBlog.addEventListener('mouseover', function () {
     containerDdBlog.style.display = 'block';
@@ -51,6 +115,8 @@ containerDdBlog.addEventListener('mouseout', function () {
 // dropdown Pages
 const containerDdPages = document.querySelector('.containerDdPages');
 const btnPages = document.querySelector('.btnPages');
+const midNavBtnPages = document.querySelector('.midNavBtnPages')
+
 
 btnPages.addEventListener('mouseover', function () {
     containerDdPages.style.display = 'block';
@@ -61,6 +127,16 @@ btnPages.addEventListener('mouseover', function () {
 btnPages.addEventListener('mouseout', function () {
     containerDdPages.style.display = 'block';
 });
+
+midNavBtnPages.addEventListener('mouseover', function (){
+    containerDdPages.style.display = 'block'
+    btnPages.style.color = '#f61f1f'
+})
+
+midNavBtnPages.addEventListener('mouseout', function (){
+    containerDdPages.style.display = 'none'
+    btnPages.style.color = 'black'
+})
 
 containerDdPages.addEventListener('mouseover', function () {
     containerDdPages.style.display = 'block';
