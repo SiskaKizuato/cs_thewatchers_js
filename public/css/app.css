@@ -30,6 +30,15 @@ nav {
     font-size: 60px;
   }
 }
+@media screen and (min-width: 374px) and (max-width: 424px) {
+  .select {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .loremS1 {
+    line-height: 30px;
+  }
+}
 .bgRed {
   background-color: #f61f1f;
 }
@@ -498,6 +507,32 @@ a {
   .s1PartRight {
     width: 40%;
     background-position: left;
+  }
+}
+@media screen and (min-width: 374px) and (max-width: 424px) {
+  .section1 {
+    height: 480px;
+    overflow: hidden;
+  }
+  .containerTxtS1 {
+    margin-left: 0px;
+    padding: 0;
+    margin-bottom: 120px;
+  }
+  .s1PartLeft {
+    width: 80%;
+  }
+  .s1PartRight {
+    position: absolute;
+    top: 80px;
+    right: -110px;
+    width: 100%;
+    height: 85.5%;
+    background-size: 50%;
+    overflow: hidden;
+  }
+  .containerLoremS1 {
+    height: 200px;
   }
 }
 /*!

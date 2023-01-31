@@ -27,8 +27,21 @@ nav{
     font-size: 12px;
 }
 
+// responsive 
+    // tablette
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .select{
         font-size: 60px;
+    }
+}
+
+    // mobile M
+@media screen and (min-width: 374px) and (max-width: 424px){
+    .select {
+        font-size: 30px;   
+        line-height: 55px;
+    }
+    .loremS1{
+        line-height: 30px;
     }
 }
