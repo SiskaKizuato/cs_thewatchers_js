@@ -169,6 +169,10 @@ a {
   display: none;
 }
 
+#iconWhite {
+  display: none;
+}
+
 .rightNavBtn:hover #iconBlack {
   display: none;
 }

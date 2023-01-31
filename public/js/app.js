@@ -155,6 +155,8 @@ const boule = document.getElementsByClassName('boule')[0]
 
 const paragraphs = document.getElementsByTagName('p');
 
+const iconWhite = document.querySelectorAll('#iconWhite')
+
 
 const a = document.getElementsByTagName('a')
 
@@ -169,7 +171,9 @@ boule.addEventListener('click', () => {
     barre.style.borderColor = modeBlanc ? 'black' : 'white'
     barre.style.justifyContent = modeBlanc ? 'right' : 'left'
     boule.style.right = modeBlanc ? '-1px' : '1px'
-    
+    iconWhite[0].style.display = modeBlanc ? 'none' : 'block'
+    iconWhite[1].style.display = modeBlanc ? 'none' : 'block'
+    iconWhite[2].style.display = modeBlanc ? 'none' : 'block'
 
     for (let i = 0; i < a.length; i++) {
         a[i].style.color = modeBlanc ? 'black' : 'white'
