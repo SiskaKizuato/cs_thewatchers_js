@@ -19,6 +19,14 @@ nav {
   font-size: 13px;
 }
 
+.loremS4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(74, 74, 75, 0.6941176471);
+  line-height: 25px;
+}
+
 .shopNow {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
@@ -44,6 +52,20 @@ nav {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   font-size: 15px;
+}
+
+.prixS4 {
+  color: rgba(3, 6, 46, 0.79);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.viewS4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -778,7 +800,6 @@ a {
 }
 
 .section4 {
-  border: 1px solid black;
   width: 100%;
   height: 1465px;
   display: flex;
@@ -787,33 +808,125 @@ a {
 }
 
 .containerSection4 {
-  border: 1px solid blue;
   width: 75%;
   height: 81%;
+  display: flex;
+  flex-direction: column;
 }
 
 .txtSection4 {
-  border: 1px solid red;
   width: 100%;
-  height: 18%;
+  height: 17%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.containerImgS4 {
+  width: 100%;
+  height: 72%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.row1S4 {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  gap: 22px;
+}
+
+.divWatch {
+  height: 100%;
+  width: 33.33%;
+}
+
+.containerTxtWatch {
+  width: 100%;
+  height: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 7px;
+}
+
+.imgSection4 {
+  width: 100%;
+  height: 76%;
+  border-bottom: 3px solid #f61f1f;
+}
+
+.row2S4 {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  gap: 22px;
+}
+
+.popular1 {
+  background-image: url("../../public/img/popular1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popular2 {
+  background-image: url("../../public/img/popular2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popular3 {
+  background-image: url("../../public/img/popular3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popular4 {
+  background-image: url("../../public/img/popular4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popular5 {
+  background-image: url("../../public/img/popular5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.popular6 {
+  background-image: url("../../public/img/popular6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .containerBtnS4 {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
-  height: 26%;
+  height: 11%;
 }
 
 .viewS4 {
   border-radius: none;
   border: none;
+  background-color: #f61f1f;
+  width: 212px;
+  height: 50px;
+  cursor: pointer;
 }
 
 /*!
