@@ -682,6 +682,7 @@ a {
   box-sizing: border-box;
   background-position: center;
   background-size: cover;
+  border: none;
 }
 
 .product1 {

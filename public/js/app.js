@@ -198,9 +198,12 @@ for (let i = 1; i <= 3; i++) {
     prixS2.innerHTML = "$ 45,743";
     txtS2.appendChild(prixS2);
 }
-
 document.body.appendChild(section2);
 
+let pS = document.querySelectorAll('p')
+let premierNom = pS[3]
+let deuxiemeNom = pS[5]
+let troisiemeNom = pS[7]
 
 
 // mode lightdark
@@ -214,7 +217,6 @@ const iconWhite = document.querySelectorAll('#iconWhite')
 const iconRed = document.querySelectorAll('#iconRed')
 const linkNav = document.querySelectorAll('.linkNav')
 const bgDropDown = document.querySelectorAll('.bgDropDown')
-console.log(linkNav[0]);
 
 
 const a = document.getElementsByTagName('a')
@@ -222,6 +224,7 @@ const a = document.getElementsByTagName('a')
 let modeBlanc = true;
 
 boule.addEventListener('click', () => {
+    
     // navbar
     modeBlanc = !modeBlanc;
     document.body.style.backgroundColor = modeBlanc ? 'white' : 'black';
@@ -250,6 +253,12 @@ boule.addEventListener('click', () => {
     loremS1.style.color = modeBlanc ? 'black' : 'white'
     const bgBlack = document.querySelectorAll('.bgBlack')
     bgBlack[0].style.backgroundColor = modeBlanc ? '#4a4a4b' : 'black'
+
+    // section 2 
+    newArrivals.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.913)' : 'white'
+    premierNom.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    deuxiemeNom.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    troisiemeNom.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
 });
 
 // icon nav hover en mode dark
