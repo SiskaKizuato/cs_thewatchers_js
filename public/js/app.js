@@ -198,7 +198,6 @@ for (let i = 1; i <= 3; i++) {
     prixS2.innerHTML = "$ 45,743";
     txtS2.appendChild(prixS2);
 }
-document.body.appendChild(section2);
 
 let pS = document.querySelectorAll('p')
 let premierNom = pS[3]
