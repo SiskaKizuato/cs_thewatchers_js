@@ -225,10 +225,27 @@ a {
   align-items: center;
 }
 
+.linkNav {
+  display: block;
+}
+
+.linkNavWhite {
+  color: red;
+  display: none;
+}
+
 .midNavBtnHome {
   position: absolute;
   width: 73px;
   height: 80px;
+}
+
+.test:hover + .linkNav {
+  color: red;
+}
+
+.lightmode {
+  color: white;
 }
 
 .midNavBtnShop {
@@ -278,9 +295,12 @@ a {
   top: 69px;
 }
 
+.bg-dropdown {
+  background-color: #f9f9f9;
+}
+
 .dropdown-contentBlog {
   position: absolute;
-  background-color: #f9f9f9;
   width: 140px;
   padding-left: 15px;
   padding-right: 15px;
