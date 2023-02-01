@@ -214,6 +214,7 @@ const footerIconW = document.querySelectorAll('#footerIconW')
 const footerIconR = document.querySelectorAll('#footerIconR')
 const footerIconB = document.querySelectorAll('#footerIconB')
 
+const titreFooter = document.querySelectorAll('.titreFooter')
 
 
 // mode lightdark
@@ -304,6 +305,8 @@ boule.addEventListener('click', () => {
     footerIconB[1].style.display = modeBlanc ? 'block' : 'none'
     footerIconB[2].style.display = modeBlanc ? 'block' : 'none'
     footerIconB[3].style.display = modeBlanc ? 'block' : 'none'
+
+    titreFooter.style.color = modeBlanc ? '#4a4a4b' : '#99999b'
 
 });
 
