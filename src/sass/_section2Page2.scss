@@ -1,5 +1,4 @@
 .section2Page2{
-    border: 1px solid red;
     width: 100%;
     height: 820px;
     position: relative;
@@ -9,7 +8,27 @@
 }
 
 #carrousel{
-    border: 1px solid blue;
-    width: 75%;
-    height: 85%;
+    height: 695px;
+    width: 945px;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    position: relative;
+}
+
+#containerCarrousel{
+    height: 695px;
+    width: 945px;
+    box-sizing: border-box;
+    background-color: black;
+}
+.btnCarrousel{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+}
+#g{
+    left: 30px;
+}
+#d{
+    right: 30px;
 }
