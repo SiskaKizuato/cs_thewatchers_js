@@ -138,7 +138,7 @@ const a = document.getElementsByTagName('a')
 let modeBlanc = true;
 
 boule.addEventListener('click', () => {
-    
+
     // navbar
     modeBlanc = !modeBlanc;
     document.body.style.backgroundColor = modeBlanc ? 'white' : 'black';
@@ -277,4 +277,15 @@ footerIconB[3].addEventListener('mouseout', function () {
 // link page 1
 document.querySelectorAll('.goBack')[0].addEventListener("click", function () {
     window.location.assign("../../index.html");
+});
+
+
+// section 4 
+    // input retirer le texte
+const inputS4P2 = document.querySelector('.inputS4P2');
+inputS4P2.addEventListener('focus', function () {
+    inputS4P2.placeholder = '';
+});
+inputS4P2.addEventListener('blur', function () {
+    inputS4P2.placeholder = 'Enter your mail';
 });
