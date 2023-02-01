@@ -198,6 +198,10 @@ nav {
   align-items: center;
 }
 
+#test {
+  color: green;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -901,6 +905,7 @@ a {
 .divWatch {
   height: 100%;
   width: 33.33%;
+  cursor: pointer;
 }
 
 .containerTxtWatch {
@@ -1225,6 +1230,16 @@ footer {
 #footerIconW {
   display: none;
   cursor: pointer;
+}
+
+.testVert {
+  color: green;
+}
+
+.aSupprimer {
+  width: 100%;
+  height: 2000px;
+  border: 1px solid black;
 }
 
 /*!
