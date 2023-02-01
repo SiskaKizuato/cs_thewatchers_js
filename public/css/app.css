@@ -125,6 +125,21 @@ nav {
   padding-left: 10px;
 }
 
+.promo {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.seam {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .select {
     font-size: 60px;
@@ -1261,6 +1276,11 @@ footer {
   box-sizing: border-box;
   width: 100%;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .containerInputS4P2 {
@@ -1268,6 +1288,56 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid white;
+  border-radius: 50px;
+  height: 50px;
+  width: 460px;
+  position: relative;
+}
+
+.inputS4P2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  position: absolute;
+  padding-left: 20px;
+  z-index: 0;
+}
+
+.btnInputS4P2 {
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  display: flex;
+  right: 0;
+  z-index: 1;
+  height: 90%;
+  margin-right: 3px;
+  width: 110px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  color: white;
+}
+
+.btnInputS4P2:hover {
+  background-color: white;
+  color: #f61f1f;
+  border: 1px solid #2577fd;
+}
+
+.form-group label {
+  color: white;
+}
+
+.input-text-white {
+  color: white;
 }
 
 /*!

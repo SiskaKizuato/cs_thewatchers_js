@@ -281,11 +281,38 @@ document.querySelectorAll('.goBack')[0].addEventListener("click", function () {
 
 
 // section 4 
-    // input retirer le texte
+// input retirer le texte
 const inputS4P2 = document.querySelector('.inputS4P2');
+const btnInputS4P2 = document.querySelector('.btnInputS4P2')
+inputS4P2.classList.add("input-text-white");
+
+
 inputS4P2.addEventListener('focus', function () {
     inputS4P2.placeholder = '';
 });
-inputS4P2.addEventListener('blur', function () {
+inputS4P2.addEventListener('mouseout', function () {
     inputS4P2.placeholder = 'Enter your mail';
 });
+btnInputS4P2.addEventListener("click", function () {
+    let value = inputS4P2.value;
+    console.log("L'utilisateur a entré :", value);
+
+    if (!value.includes("@") || !value.includes(".")) {
+        inputS4P2.value = "That's not a email!";
+        setTimeout(function () {
+            inputS4P2.value = "";
+            inputS4P2.placeholder = 'Enter your mail';
+        }, 1000);
+        return;
+    } else {
+        inputS4P2.value = "";
+        inputS4P2.placeholder = 'Thanks  for sharing your mail';
+        setTimeout(function () {
+            inputS4P2.value = "";
+            inputS4P2.placeholder = 'Enter your mail';
+        }, 1000);
+        return;
+    }
+});
+
+
