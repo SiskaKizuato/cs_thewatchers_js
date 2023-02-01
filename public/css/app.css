@@ -27,6 +27,16 @@ nav {
   line-height: 25px;
 }
 
+.loremS6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(101, 101, 101, 0.6941176471);
+  line-height: 25px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 .shopNow {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
@@ -964,7 +974,6 @@ a {
 .containerS6 {
   width: 75%;
   height: 76%;
-  border: 1px solid goldenrod;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -973,7 +982,6 @@ a {
 }
 
 .row1S6 {
-  border: 1px solid orange;
   height: 50%;
   width: 100%;
   display: flex;
@@ -983,7 +991,6 @@ a {
 }
 
 .row2S6 {
-  border: 1px solid red;
   height: 50%;
   width: 100%;
   display: flex;
@@ -995,14 +1002,15 @@ a {
 .row1S6Left {
   height: 100%;
   width: 50%;
-  border: 1px solid black;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .row1S6Right {
   height: 100%;
   width: 50%;
-  border: 1px solid red;
   box-sizing: border-box;
   background-image: url("../../public/img/choce_watch1.png");
   background-position: center;
@@ -1013,7 +1021,6 @@ a {
 .row2S6Left {
   height: 100%;
   width: 50%;
-  border: 1px solid black;
   box-sizing: border-box;
   background-image: url("../../public/img/choce_watch2.png");
   background-position: center;
@@ -1024,8 +1031,11 @@ a {
 .row2S6Right {
   height: 100%;
   width: 50%;
-  border: 1px solid red;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 85px;
 }
 
 .showWatches {
@@ -1038,6 +1048,7 @@ a {
   height: 50px;
   border: none;
   border-radius: none;
+  cursor: pointer;
 }
 
 .section7 {
