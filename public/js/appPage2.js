@@ -1,3 +1,7 @@
+// selectors en vrac
+const foam = document.querySelector('.foam');
+const s4P2Text = document.querySelector('.s4P2Text')
+
 // hover color red  btn Nav sans Dd
 const midNavBtnHome = document.querySelector('.midNavBtnHome')
 const btnHome = document.querySelector('.btnHome');
@@ -158,6 +162,10 @@ boule.addEventListener('click', () => {
     }
     boule.style.float = modeBlanc ? 'right' : 'left';
 
+    // section 3
+    foam.style.color = modeBlanc ? 'rgba(0, 0, 0, 0.856)' : 'white'
+    s4P2Text.style.color = modeBlanc ? 'rgb(112, 111, 111)' : 'white'
+
     // footer
     footerIconW[0].style.display = modeBlanc ? 'none' : 'block'
     footerIconW[1].style.display = modeBlanc ? 'none' : 'block'
@@ -314,6 +322,5 @@ btnInputS4P2.addEventListener("click", function () {
         return;
     }
 });
-
 
 
