@@ -201,10 +201,38 @@ for (let i = 1; i <= 3; i++) {
     txtS2.appendChild(prixS2);
 }
 
+// selectors en vrac
 let pS = document.querySelectorAll('p')
 let premierNom = pS[3]
 let deuxiemeNom = pS[5]
 let troisiemeNom = pS[7]
+
+let containerTxtWatch = document.querySelectorAll('.containerTxtWatch')
+let containerTxtWatch1 = containerTxtWatch[0]
+let containerTxtWatch2 = containerTxtWatch[1]
+let containerTxtWatch3 = containerTxtWatch[2]
+let containerTxtWatch4 = containerTxtWatch[3]
+let containerTxtWatch5 = containerTxtWatch[4]
+let containerTxtWatch6 = containerTxtWatch[5]
+
+let nomArticleS2 = document.querySelectorAll(".nomArticleS2")
+let nomArticleS2A = nomArticleS2[3]
+let nomArticleS2B = nomArticleS2[4]
+let nomArticleS2C = nomArticleS2[5]
+let nomArticleS2D = nomArticleS2[6]
+let nomArticleS2F = nomArticleS2[7]
+let nomArticleS2E = nomArticleS2[8]
+
+let prixS4 = document.querySelectorAll(".prixS4")
+let prixS4A = prixS4[0]
+let prixS4B = prixS4[1]
+let prixS4C = prixS4[2]
+let prixS4D = prixS4[3]
+let prixS4F = prixS4[4]
+let prixS4E = prixS4[5]
+
+let newArrivalsS4 = document.querySelectorAll(".newArrivals")[1]
+let loremS4 = document.querySelectorAll(".loremS4")[0]
 
 
 // mode lightdark
@@ -261,6 +289,22 @@ boule.addEventListener('click', () => {
     deuxiemeNom.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
     troisiemeNom.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
     section3.style.backgroundColor = modeBlanc ? 'white' : '#4a4a4bd'
+
+    // section 4
+    nomArticleS2A.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    nomArticleS2B.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    nomArticleS2C.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    nomArticleS2D.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    nomArticleS2F.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    nomArticleS2E.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    prixS4A.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    prixS4B.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    prixS4C.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    prixS4D.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    prixS4F.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    prixS4E.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
+    newArrivalsS4.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.913)' : 'white'
+    loremS4.style.color = modeBlanc ? '#4a4a4bb1' : 'white'
 });
 
 // icon nav hover en mode dark
