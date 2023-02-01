@@ -1298,14 +1298,16 @@ footer {
 .inputS4P2 {
   height: 100%;
   width: 100%;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: none;
   border-radius: 50px;
   display: flex;
   position: absolute;
+  left: 0;
   padding-left: 20px;
+  padding-right: 20px;
   z-index: 0;
 }
 
