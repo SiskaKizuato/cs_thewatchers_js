@@ -3,4 +3,14 @@ footer{
     height: 480px;
     box-sizing: border-box;
     border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFooter{
+    height: 100%;
+    width: 75%;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
