@@ -2,7 +2,6 @@ footer{
     width: 100%;
     height: 480px;
     box-sizing: border-box;
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,13 +11,11 @@ footer{
     height: 100%;
     width: 75%;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 .footerRow1{
     width: 100%;
     height: 70%;
-    border: 1px solid green;
     box-sizing: border-box;
     display: flex;
     gap: 30px;
@@ -26,7 +23,6 @@ footer{
 .footerRow2{
     display: flex;
     box-sizing: border-box;
-    border: 1px solid  black;
     gap: 20px;
     width: 100%;
     height: 15%;
@@ -39,7 +35,6 @@ footer{
     height: 100%;
     width: 25%;
     box-sizing: border-box;
-    border: 1px solid  red;
     display: flex;
     flex-direction: column;
 }
@@ -48,3 +43,23 @@ footer{
     height: 13px;
     width: auto;
 }
+
+.containerIconFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerIconB{
+    display: block;
+    cursor: pointer;
+}
+#footerIconR{
+    display: none;
+    cursor: pointer;
+}
+#footerIconW{
+    display: none;
+    cursor: pointer;
+}
+

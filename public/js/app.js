@@ -11,37 +11,6 @@ const btnAbout = document.querySelector('.btnAbout');
 const midNavBtnContact = document.querySelector('.midNavBtnContact')
 const btnContact = document.querySelector('.btnContact');
 
-
-// midNavBtnHome.addEventListener('mouseover', function (){
-//     btnHome.style.color = '#f61f1f'
-// })
-// midNavBtnHome.addEventListener('mouseout', function (){
-//     btnHome.style.color = 'black'
-// })
-
-// midNavBtnShop.addEventListener('mouseover', function () {
-//     btnShop.style.color = '#f61f1f'
-// })
-// midNavBtnShop.addEventListener('mouseout', function () {
-//     btnShop.style.color = 'black'
-// })
-
-// midNavBtnAbout.addEventListener('mouseover', function () {
-//     btnAbout.style.color = '#f61f1f'
-// })
-
-// midNavBtnAbout.addEventListener('mouseout', function () {
-//     btnAbout.style.color = 'black'
-// })
-
-// midNavBtnContact.addEventListener('mouseover', function () {
-//     btnContact.style.color = '#f61f1f'
-// })
-
-// midNavBtnContact.addEventListener('mouseout', function () {
-//     btnContact.style.color = 'black'
-// })
-
 // dropdown Latest
 const containerDdLatest = document.querySelector('.containerDdLatest');
 const btnLatest = document.querySelector('.btnLatest');
@@ -241,6 +210,10 @@ let loremS6 = document.querySelectorAll('.loremS6')
 let loremS6_1 = loremS6[0]
 let loremS6_2 = loremS6[1]
 
+const footerIconW = document.querySelectorAll('#footerIconW')
+const footerIconR = document.querySelectorAll('#footerIconR')
+const footerIconB = document.querySelectorAll('#footerIconB')
+
 
 
 // mode lightdark
@@ -320,6 +293,18 @@ boule.addEventListener('click', () => {
     newArrivalsS6_1.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.913)' : 'white'
     newArrivalsS6_2.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.913)' : 'white'
     // section6.style.backgroundColor = modeBlanc ? 'white' : '#4a4a4b'
+
+    // footer
+    footerIconW[0].style.display = modeBlanc ? 'none' : 'block'
+    footerIconW[1].style.display = modeBlanc ? 'none' : 'block'
+    footerIconW[2].style.display = modeBlanc ? 'none' : 'block'
+    footerIconW[3].style.display = modeBlanc ? 'none' : 'block'
+
+    footerIconB[0].style.display = modeBlanc ? 'block' : 'none'
+    footerIconB[1].style.display = modeBlanc ? 'block' : 'none'
+    footerIconB[2].style.display = modeBlanc ? 'block' : 'none'
+    footerIconB[3].style.display = modeBlanc ? 'block' : 'none'
+
 });
 
 // icon nav hover en mode dark
@@ -348,4 +333,76 @@ iconWhite[2].addEventListener('mouseover', function () {
 iconWhite[2].addEventListener('mouseout', function () {
     iconRed[2].style.display = 'none'
     iconWhite[2].style.display = 'block'
+})
+
+// icon footer hover en mode dark
+footerIconW[0].addEventListener('mouseover', function () {
+    footerIconW[0].style.display = 'none'
+    footerIconR[0].style.display = 'block'
+})
+footerIconW[0].addEventListener('mouseout', function () {
+    footerIconR[0].style.display = 'none'
+    footerIconW[0].style.display = 'block'
+})
+
+footerIconW[1].addEventListener('mouseover', function () {
+    footerIconW[1].style.display = 'none'
+    footerIconR[1].style.display = 'block'
+})
+footerIconW[1].addEventListener('mouseout', function () {
+    footerIconR[1].style.display = 'none'
+    footerIconW[1].style.display = 'block'
+})
+
+footerIconW[2].addEventListener('mouseover', function () {
+    footerIconW[2].style.display = 'none'
+    footerIconR[2].style.display = 'block'
+})
+footerIconW[2].addEventListener('mouseout', function () {
+    footerIconR[2].style.display = 'none'
+    footerIconW[2].style.display = 'block'
+})
+footerIconW[3].addEventListener('mouseover', function () {
+    footerIconW[3].style.display = 'none'
+    footerIconR[3].style.display = 'block'
+})
+footerIconW[3].addEventListener('mouseout', function () {
+    footerIconR[3].style.display = 'none'
+    footerIconW[3].style.display = 'block'
+})
+
+// icon footer hover en mode light
+footerIconB[0].addEventListener('mouseover', function () {
+    footerIconB[0].style.display = 'none'
+    footerIconR[0].style.display = 'block'
+})
+footerIconB[0].addEventListener('mouseout', function () {
+    footerIconR[0].style.display = 'none'
+    footerIconB[0].style.display = 'block'
+})
+
+footerIconB[1].addEventListener('mouseover', function () {
+    footerIconB[1].style.display = 'none'
+    footerIconR[1].style.display = 'block'
+})
+footerIconB[1].addEventListener('mouseout', function () {
+    footerIconR[1].style.display = 'none'
+    footerIconB[1].style.display = 'block'
+})
+
+footerIconB[2].addEventListener('mouseover', function () {
+    footerIconB[2].style.display = 'none'
+    footerIconR[2].style.display = 'block'
+})
+footerIconB[2].addEventListener('mouseout', function () {
+    footerIconR[2].style.display = 'none'
+    footerIconB[2].style.display = 'block'
+})
+footerIconB[3].addEventListener('mouseover', function () {
+    footerIconB[3].style.display = 'none'
+    footerIconR[3].style.display = 'block'
+})
+footerIconB[3].addEventListener('mouseout', function () {
+    footerIconR[3].style.display = 'none'
+    footerIconB[3].style.display = 'block'
 })
