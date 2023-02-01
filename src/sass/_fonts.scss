@@ -70,6 +70,22 @@ nav{
     color: white;
 }
 
+.titreShipping{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 14px;
+    margin-bottom: 14px;
+
+}
+.txtS7{
+    color: rgb(231, 226, 226);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+}
+
 // responsive 
     // tablette
 @media screen and (min-width: 768px) and (max-width: 1023px){

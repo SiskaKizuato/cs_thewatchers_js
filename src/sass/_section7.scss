@@ -1,6 +1,36 @@
 .section7{
     width: 100%;
-    height: 400px;
+    height: 200px;
     box-sizing: border-box;
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerS7{
+    height: 100%;
+    width: 75%;
+    background-color:#f61f1f;
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paddingShipping{
+    width: 96%;
+    height: 82%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 100px;
+}
+
+.containerShipping{
+    height: 100%;
+    width: 33.3%;
+    box-sizing: border-box;
+}
+
+.imgS7{
+    width: 34px;
+    height: auto;
 }

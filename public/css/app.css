@@ -68,6 +68,22 @@ nav {
   color: white;
 }
 
+.titreShipping {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.txtS7 {
+  color: rgb(231, 226, 226);
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .select {
     font-size: 60px;
@@ -953,9 +969,40 @@ a {
 
 .section7 {
   width: 100%;
-  height: 400px;
+  height: 200px;
   box-sizing: border-box;
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerS7 {
+  height: 100%;
+  width: 75%;
+  background-color: #f61f1f;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paddingShipping {
+  width: 96%;
+  height: 82%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 100px;
+}
+
+.containerShipping {
+  height: 100%;
+  width: 33.3%;
+  box-sizing: border-box;
+}
+
+.imgS7 {
+  width: 34px;
+  height: auto;
 }
 
 /*!
