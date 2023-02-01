@@ -234,6 +234,14 @@ let prixS4E = prixS4[5]
 let newArrivalsS4 = document.querySelectorAll(".newArrivals")[1]
 let loremS4 = document.querySelectorAll(".loremS4")[0]
 
+let section6 = document.querySelectorAll(".section6")[0]
+let newArrivalsS6_1 = document.querySelectorAll(".newArrivals")[2]
+let newArrivalsS6_2 = document.querySelectorAll(".newArrivals")[3]
+let loremS6 = document.querySelectorAll('.loremS6')
+let loremS6_1 = loremS6[0]
+let loremS6_2 = loremS6[1]
+
+
 
 // mode lightdark
 const barre = document.getElementsByClassName('barre')[0]
@@ -305,6 +313,13 @@ boule.addEventListener('click', () => {
     prixS4E.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.79)' : 'white'
     newArrivalsS4.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.913)' : 'white'
     loremS4.style.color = modeBlanc ? '#4a4a4bb1' : 'white'
+
+    // section 6
+    loremS6_1.style.color = modeBlanc ? '#656565b1a4a4bb1' : 'white'
+    loremS6_2.style.color = modeBlanc ? '#656565b1a4a4bb1' : 'white'
+    newArrivalsS6_1.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.913)' : 'white'
+    newArrivalsS6_2.style.color = modeBlanc ? 'rgba(3, 6, 46, 0.913)' : 'white'
+    // section6.style.backgroundColor = modeBlanc ? 'white' : '#4a4a4b'
 });
 
 // icon nav hover en mode dark
