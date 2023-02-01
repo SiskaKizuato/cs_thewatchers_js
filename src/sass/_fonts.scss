@@ -95,6 +95,37 @@ nav{
     line-height: 25px;
 }
 
+.txtFooter{
+    padding-top: 50px;
+    color: rgba(142, 139, 139, 0.797);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.titreFooter{
+    color: #4a4a4b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.lienFooter{
+    color: rgb(129, 128, 128);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 35px;
+    transition: 0.3s;
+}
+
+.lienFooter:hover{
+    color: #f61f1f;
+    padding-left: 10px;
+}
+
 // responsive 
     // tablette
 @media screen and (min-width: 768px) and (max-width: 1023px){

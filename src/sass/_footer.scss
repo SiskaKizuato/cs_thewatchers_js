@@ -14,3 +14,37 @@ footer{
     box-sizing: border-box;
     border: 1px solid red;
 }
+
+.footerRow1{
+    width: 100%;
+    height: 70%;
+    border: 1px solid green;
+    box-sizing: border-box;
+    display: flex;
+    gap: 30px;
+}
+.footerRow2{
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid  black;
+    gap: 20px;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    justify-content: right;
+}
+
+.footerCol{
+    padding-top: 100px;
+    height: 100%;
+    width: 25%;
+    box-sizing: border-box;
+    border: 1px solid  red;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerIcon{
+    height: 13px;
+    width: auto;
+}
