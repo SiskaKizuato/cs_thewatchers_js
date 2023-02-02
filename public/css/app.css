@@ -1013,6 +1013,20 @@ a {
   height: 100%;
   width: 33.33%;
   cursor: pointer;
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  opacity: 0%;
+  display: none;
+}
+
+.divWatch:hover .heart {
+  display: block;
+  opacity: 60%;
 }
 
 .containerTxtWatch {
@@ -1030,6 +1044,36 @@ a {
   width: 100%;
   height: 76%;
   border-bottom: 3px solid #f61f1f;
+  position: relative;
+}
+
+.cadreRouge {
+  background-color: #f61f1f;
+  width: 100%;
+  height: 17%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.imgSection4:hover .cadreRouge {
+  display: block;
+}
+
+.txtCadreRouge {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+.pCadre {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .row2S4 {
