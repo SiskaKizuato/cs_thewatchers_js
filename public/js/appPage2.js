@@ -123,6 +123,7 @@ const footerIconB = document.querySelectorAll('#footerIconB')
 
 const titreFooter = document.querySelectorAll('.titreFooter')
 let header = document.getElementsByTagName("header")
+let nav = document.getElementsByTagName("nav")
 
 
 // mode lightdark
@@ -148,7 +149,7 @@ boule.addEventListener('click', () => {
 
     // navbar
     modeBlanc = !modeBlanc;
-    header[0].style.backgroundColor = modeBlanc ? 'white' : 'black';
+    nav[0].style.backgroundColor = modeBlanc ? 'white' : 'black';
     document.body.style.backgroundColor = modeBlanc ? 'white' : 'black';
     barre.style.backgroundColor = modeBlanc ? '#a02424ca' : 'rgb(135, 206, 235)'
     barre.style.borderColor = modeBlanc ? 'black' : 'white'
@@ -403,39 +404,27 @@ containerBtnS3P2.addEventListener('click', function () {
 });
 
 
-// btnUp
+
+// btnUp et nav fixed
+
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
+window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";
     }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-// tentative nav
-window.onscroll = function () { navPos() };
-
-function navPos() {
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         header[0].style.position = "fixed"
     } else {
         header[0].style.position = "relative";
     }
-}
+};
 
 // When the user clicks on the button, scroll to the top of the document
-function navMid() {
+function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }

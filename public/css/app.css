@@ -10691,7 +10691,6 @@ header {
   width: 100%;
   height: 80px;
   box-sizing: border-box;
-  background-color: white;
   display: block;
   z-index: 10;
 }
@@ -10705,6 +10704,7 @@ nav {
   align-items: center;
   padding-left: 70px;
   padding-right: 20px;
+  background-color: white;
 }
 
 .leftPartNav {
