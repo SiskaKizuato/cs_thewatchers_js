@@ -10765,26 +10765,16 @@ a {
   align-items: center;
 }
 
-.icon {
-  position: absolute;
-  top: -5px;
-  left: 0;
-}
-
 #profileBtn:hover {
   color: red;
 }
 
-#iconBlack {
-  display: block;
+#searchBtn:hover {
+  color: red;
 }
 
-#iconRed {
-  display: none;
-}
-
-#iconWhite {
-  display: none;
+#cartBtn:hover {
+  color: red;
 }
 
 .rightNavBtn:hover #iconBlack {

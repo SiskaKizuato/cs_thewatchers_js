@@ -236,8 +236,8 @@ const boule = document.getElementsByClassName('boule')[0]
 
 const paragraphs = document.getElementsByTagName('p');
 
-const iconWhite = document.querySelectorAll('#iconWhite')
-const iconRed = document.querySelectorAll('#iconRed')
+// const iconWhite = document.querySelectorAll('#iconWhite')
+// const iconRed = document.querySelectorAll('#iconRed')
 const linkNav = document.querySelectorAll('.linkNav')
 const bgDropDown = document.querySelectorAll('.bgDropDown')
 
@@ -256,9 +256,9 @@ boule.addEventListener('click', () => {
     barre.style.borderColor = modeBlanc ? 'black' : 'white'
     barre.style.justifyContent = modeBlanc ? 'right' : 'left'
     boule.style.right = modeBlanc ? '-1px' : '1px'
-    iconWhite[0].style.display = modeBlanc ? 'none' : 'block'
-    iconWhite[1].style.display = modeBlanc ? 'none' : 'block'
-    iconWhite[2].style.display = modeBlanc ? 'none' : 'block'
+    // iconWhite[0].style.display = modeBlanc ? 'none' : 'block'
+    // iconWhite[1].style.display = modeBlanc ? 'none' : 'block'
+    // iconWhite[2].style.display = modeBlanc ? 'none' : 'block'
     btn.style.color = modeBlanc ? 'black' : 'white'
 
     bgDropDown[0].style.backgroundColor = modeBlanc ? 'white' : 'black'
@@ -326,32 +326,32 @@ boule.addEventListener('click', () => {
 });
 
 // icon nav hover en mode dark
-iconWhite[0].addEventListener('mouseover', function () {
-    iconWhite[0].style.display = 'none'
-    iconRed[0].style.display = 'block'
-})
-iconWhite[0].addEventListener('mouseout', function () {
-    iconRed[0].style.display = 'none'
-    iconWhite[0].style.display = 'block'
-})
+// iconWhite[0].addEventListener('mouseover', function () {
+//     iconWhite[0].style.display = 'none'
+//     iconRed[0].style.display = 'block'
+// })
+// iconWhite[0].addEventListener('mouseout', function () {
+//     iconRed[0].style.display = 'none'
+//     iconWhite[0].style.display = 'block'
+// })
 
-iconWhite[1].addEventListener('mouseover', function () {
-    iconWhite[1].style.display = 'none'
-    iconRed[1].style.display = 'block'
-})
-iconWhite[1].addEventListener('mouseout', function () {
-    iconRed[1].style.display = 'none'
-    iconWhite[1].style.display = 'block'
-})
+// iconWhite[1].addEventListener('mouseover', function () {
+//     iconWhite[1].style.display = 'none'
+//     iconRed[1].style.display = 'block'
+// })
+// iconWhite[1].addEventListener('mouseout', function () {
+//     iconRed[1].style.display = 'none'
+//     iconWhite[1].style.display = 'block'
+// })
 
-iconWhite[2].addEventListener('mouseover', function () {
-    iconWhite[2].style.display = 'none'
-    iconRed[2].style.display = 'block'
-})
-iconWhite[2].addEventListener('mouseout', function () {
-    iconRed[2].style.display = 'none'
-    iconWhite[2].style.display = 'block'
-})
+// iconWhite[2].addEventListener('mouseover', function () {
+//     iconWhite[2].style.display = 'none'
+//     iconRed[2].style.display = 'block'
+// })
+// iconWhite[2].addEventListener('mouseout', function () {
+//     iconRed[2].style.display = 'none'
+//     iconWhite[2].style.display = 'block'
+// })
 
 // icon footer hover en mode dark
 footerIconW[0].addEventListener('mouseover', function () {
