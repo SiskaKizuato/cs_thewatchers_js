@@ -1321,6 +1321,7 @@ footer {
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 }
 
 #containerCarrousel {
