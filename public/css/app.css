@@ -10597,11 +10597,6 @@ nav {
   padding-bottom: 5px;
 }
 
-#btnS3P2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 13px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .select {
     font-size: 60px;
@@ -12012,14 +12007,26 @@ p {
   width: 140px;
   border-radius: 5px;
   cursor: pointer;
+  transition: ease-in-out 0.5s;
 }
 
-#btnS3P2 {
+.btnS3P2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
   background-color: none;
-  color: #2577fd;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #2577fd;
+  transition: ease-in-out 0.3s;
+}
+
+.btnS3P2:hover {
+  background-color: #2577fd;
+  color: white;
 }
 
 .boxMoins {
