@@ -19,12 +19,20 @@
     height: 695px;
     width: 945px;
     box-sizing: border-box;
-    background-color: black;
+}
+.photo{
+    width: 945px;
+    height: 695px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
 }
 .btnCarrousel{
     position: absolute;
     cursor: pointer;
     top: 50%;
+    background-color: #9cbbec76;
+    border-radius: 50px;
 }
 #g{
     left: 30px;
