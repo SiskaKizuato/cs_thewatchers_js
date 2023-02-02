@@ -1,4 +1,4 @@
-.section4{
+.section4 {
     // border: 1px solid black;
     width: 100%;
     height: 1465px;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.containerSection4{
+.containerSection4 {
     // border: 1px solid  blue;
     width: 75%;
     height: 81%;
@@ -15,7 +15,7 @@
     flex-direction: column;
 }
 
-.txtSection4{
+.txtSection4 {
     // border: 1px solid red;
     width: 100%;
     height: 17%;
@@ -26,7 +26,8 @@
     text-align: center;
     gap: 10px;
 }
-.containerImgS4{
+
+.containerImgS4 {
     width: 100%;
     height: 72%;
     display: flex;
@@ -34,7 +35,7 @@
     gap: 22px;
 }
 
-.row1S4{
+.row1S4 {
     display: flex;
     box-sizing: border-box;
     width: 100%;
@@ -42,24 +43,26 @@
     gap: 22px;
 }
 
-.divWatch{
+.divWatch {
     height: 100%;
     width: 33.33%;
     cursor: pointer;
-    position: relative;
 }
-.heart{
+
+.heart {
     position: absolute;
-    top: 15px;
-    right: 13px;
-    opacity: 0%;
-    display: none;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    opacity: 0;
+    transition: 1s;
 }
-.divWatch:hover .heart{
-    display: block;
-    opacity: 60%;
+
+.divWatch:hover .heart {
+    opacity: 1;
 }
-.containerTxtWatch{
+
+.containerTxtWatch {
     width: 100%;
     height: 24%;
     display: flex;
@@ -70,90 +73,63 @@
     padding-bottom: 7px;
 }
 
-.imgSection4{
+.imgSection4 {
     width: 100%;
     height: 76%;
     border-bottom: 3px solid #f61f1f;
     position: relative;
 }
 
-.cadreRouge{
-    background-color: #f61f1f;
-    width: 100%;
-    height: 17%;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    cursor: pointer;
-    display: none;
-}
-
-.imgSection4:hover .cadreRouge{
-    display: block;
-}
-.txtCadreRouge{
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    color: white;
-}
-.pCadre{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.row2S4{
+.row2S4 {
     display: flex;
     width: 100%;
     height: 50%;
     gap: 22px;
 }
 
-.popular1{
+.popular1 {
     background-image: url("../../public/img/popular1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.popular2{
+.popular2 {
     background-image: url("../../public/img/popular2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.popular3{
+.popular3 {
     background-image: url("../../public/img/popular3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.popular4{
+.popular4 {
     background-image: url("../../public/img/popular4.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.popular5{
+.popular5 {
     background-image: url("../../public/img/popular5.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.popular6{
+.popular6 {
     background-image: url("../../public/img/popular6.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.containerBtnS4{
+.containerBtnS4 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -161,11 +137,63 @@
     height: 11%;
 }
 
-.viewS4{
+.viewS4 {
     border-radius: none;
     border: none;
     background-color: #f61f1f;
     width: 212px;
     height: 50px;
+    display: block;
     cursor: pointer;
+    background: linear-gradient(to right, #4a4a4b 50%, #f61f1f 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.viewS4:hover {
+    background-position: left bottom;
+}
+
+.txtViewS4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    transition: all .6s ease-out;
+    display: block;
+}
+
+.txtViewS4:hover {
+    color: white;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    height: 17%;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
