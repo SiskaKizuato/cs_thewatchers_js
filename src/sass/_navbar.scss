@@ -1,36 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.flex{
+.flex {
     display: flex;
 }
-.justify{
+
+.justify {
     justify-content: center;
 }
-.align{
+
+.align {
     align-items: center;
 }
-#test{
+
+#test {
     color: green;
 }
 
-p{
+p {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     width: 100%;
-    height:80px;
+    height: 80px;
     box-sizing: border-box;
     display: block;
     z-index: 10;
 }
 
-nav{
+nav {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -42,14 +45,16 @@ nav{
     background-color: white;
 
 }
-.leftPartNav{
+
+.leftPartNav {
     height: 100%;
     width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.midPartNav{
+
+.midPartNav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +62,8 @@ nav{
     cursor: pointer;
     height: 100%;
 }
-.rightPartNav{
+
+.rightPartNav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,29 +73,31 @@ nav{
     margin-right: 20px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.linkNav:hover{
+.linkNav:hover {
     color: #f61f1f
 }
 
-.resizeImg1{
+.resizeImg1 {
     height: 12px;
     width: auto;
 }
-.resizeImg2{
+
+.resizeImg2 {
     height: 12px;
     width: auto;
 }
-.resizeImg3{
+
+.resizeImg3 {
     height: 14px;
     width: auto;
 }
 
-.rightNavBtn{
+.rightNavBtn {
     position: relative;
     display: flex;
     justify-content: center;
@@ -102,7 +110,9 @@ a{
     top: -5px;
     left: 0;
 }
-
+#profileBtn:hover{
+    color: red;
+}
 #iconBlack {
     display: block;
 }
@@ -148,7 +158,7 @@ a{
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     padding-bottom: 22px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -156,75 +166,77 @@ a{
     top: 75px;
 }
 
-.containerDdLatest{
+.containerDdLatest {
     display: none;
 }
-.midNavBtn{
+
+.midNavBtn {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.linkNav{
+
+.linkNav {
     display: block;
 }
-.linkNavWhite{
+
+.linkNavWhite {
     color: #f61f1f;
     display: none;
 }
 
-.midNavBtnHome{
+.midNavBtnHome {
     position: absolute;
     width: 73px;
     height: 80px;
 }
 
-.test:hover +
-.linkNav{
+.test:hover+.linkNav {
     color: #f61f1f;
 }
 
-.lightmode{
+.lightmode {
     color: white;
 }
 
-.midNavBtnShop{
+.midNavBtnShop {
     position: absolute;
     width: 60px;
     height: 80px;
 }
 
-.shopNow:hover{
+.shopNow:hover {
     color: #f61f1f;
     cursor: pointer;
 }
 
-.midNavBtnAbout{
+.midNavBtnAbout {
     position: absolute;
     width: 70px;
     height: 80px;
 }
 
-.midNavBtnLatest{
+.midNavBtnLatest {
     position: absolute;
     width: 73px;
     height: 80px;
 }
 
-.midNavBtnBlog{
+.midNavBtnBlog {
     position: absolute;
     width: 60px;
     height: 80px;
 }
 
-.midNavBtnPages{
+.midNavBtnPages {
     position: absolute;
     width: 70px;
     height: 80px;
 }
 
 
-.midNavBtnContact{
+.midNavBtnContact {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -240,7 +252,8 @@ a{
     right: 43.2%;
     top: 69px;
 }
-.bg-dropdown{
+
+.bg-dropdown {
     background-color: #f9f9f9;
 }
 
@@ -257,7 +270,7 @@ a{
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     padding-bottom: 22px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -265,7 +278,7 @@ a{
     top: 75px;
 }
 
-.containerDdBlog{
+.containerDdBlog {
     display: none;
 }
 
@@ -294,7 +307,7 @@ a{
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     padding-bottom: 22px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -302,19 +315,19 @@ a{
     top: 75px;
 }
 
-.containerDdPages{
+.containerDdPages {
     display: none;
 }
 
 
 /* dark mode white mode */
-.btn-mode{
+.btn-mode {
     height: 40px;
     width: 100px;
     box-sizing: border-box;
 }
 
-.barre{
+.barre {
     border: 1px solid black;
     height: 13px;
     width: 25px;
@@ -325,7 +338,7 @@ a{
     box-shadow: inset 2px 2.5px 1px #a02424ca;
 }
 
-.boule{
+.boule {
     border: 1px solid black;
     height: 17px;
     width: 17px;
@@ -341,60 +354,71 @@ a{
 
 
 // responsive
-    // tablette
+// tablette
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     nav {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .midPartNav{
+
+    .midPartNav {
         padding-right: 20px;
     }
-    .triangle{
+
+    .triangle {
         right: 53%;
     }
-    .triangleBlog{
+
+    .triangleBlog {
         right: 43.4%;
     }
-    .trianglePages{
+
+    .trianglePages {
         right: 35.5%;
     }
-    .dropdown-content{
-        right:39.3%;
+
+    .dropdown-content {
+        right: 39.3%;
     }
-    .dropdown-contentBlog{
-        right:29.7%;
+
+    .dropdown-contentBlog {
+        right: 29.7%;
     }
-    .dropdown-contentPages{
-        right:21.8%;
+
+    .dropdown-contentPages {
+        right: 21.8%;
     }
 }
 
 
-    // mobile M
-@media screen and (min-width: 374px) and (max-width: 424px){
-    header{
-        width: fit-content;
-        height:fit-content;
-        box-sizing: border-box;
-    }
-    nav{
+// mobile M
+@media screen and (min-width: 374px) and (max-width: 424px) {
+    header {
         width: fit-content;
         height: fit-content;
-        padding-top: 20px;        
+        box-sizing: border-box;
+    }
+
+    nav {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 20px;
         padding-bottom: 20px;
     }
-    .leftPartNav{
+
+    .leftPartNav {
         height: 100px;
     }
-    .midPartNav{
+
+    .midPartNav {
         display: flex;
         flex-direction: column;
         gap: 20px;
         cursor: pointer;
         height: fit-content;
     }
-    .rightPartNav{
+
+    .rightPartNav {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -403,4 +427,46 @@ a{
         height: fit-content;
         margin-right: 20px;
     }
+}
+
+
+// modal
+
+
+//  The Modal (background) /
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+// Modal Content /
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }

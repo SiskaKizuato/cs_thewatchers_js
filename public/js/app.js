@@ -10,6 +10,8 @@ const btnAbout = document.querySelector('.btnAbout');
 
 const midNavBtnContact = document.querySelector('.midNavBtnContact')
 const btnContact = document.querySelector('.btnContact');
+let btn = document.getElementById("profileBtn");
+
 
 // dropdown Latest
 const containerDdLatest = document.querySelector('.containerDdLatest');
@@ -222,6 +224,9 @@ const titreFooter = document.querySelectorAll('.titreFooter')
 
 let header = document.getElementsByTagName("header")
 let nav = document.getElementsByTagName("nav")
+let iFrame = document.getElementsByTagName("iFrame")
+
+let playBtn = document.querySelectorAll(".playBtn")[0]
 
 
 // mode lightdark
@@ -254,6 +259,8 @@ boule.addEventListener('click', () => {
     iconWhite[0].style.display = modeBlanc ? 'none' : 'block'
     iconWhite[1].style.display = modeBlanc ? 'none' : 'block'
     iconWhite[2].style.display = modeBlanc ? 'none' : 'block'
+    btn.style.color = modeBlanc ? 'black' : 'white'
+
     bgDropDown[0].style.backgroundColor = modeBlanc ? 'white' : 'black'
     bgDropDown[1].style.backgroundColor = modeBlanc ? 'white' : 'black'
     bgDropDown[2].style.backgroundColor = modeBlanc ? 'white' : 'black'
@@ -444,7 +451,7 @@ document.querySelectorAll(".divWatch")[5].addEventListener("click", function () 
 
 let mybutton = document.getElementById("myBtn");
 
-window.onscroll = function() {
+window.onscroll = function () {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
     } else {
@@ -463,3 +470,95 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+// youtube
+// playBtn.addEventListener('click', () => {
+    
+// })
+let containerVideo = document.querySelector(".containerVideo")
+
+
+playBtn.onclick = function () {
+    playBtn.style.display = "none"
+    iFrame[0].style.display = "block"
+    containerVideo.style.backgroundColor = "rgba(255, 166, 0, 0.272)"
+}
+
+// modal
+
+// Get the modal
+let modal = document.getElementById("myModal");
+
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+// get the button creat account
+let createAccount = document.getElementById("inscription");
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+};
+
+
+
+
+
+createAccount.addEventListener("click", function () {
+    let modalContent = document.getElementsByClassName("modal-content")[0];
+    let nom = document.createElement("input");
+    let prenom = document.createElement("input");
+    let password = document.createElement("input");
+    password.setAttribute("type", "password");
+    let nomTexte = document.createElement("p");
+    nomTexte.textContent = "nom";
+    let prenomTexte = document.createElement("p");
+    prenomTexte.textContent = "prenom";
+    let passwordTexte = document.createElement("p");
+    passwordTexte.textContent = "password";
+    let div = document.getElementById("confirmerPassword");
+
+    div.append(passwordTexte);
+    div.append(password);
+    modalContent.prepend(prenom);
+    modalContent.prepend(prenomTexte);
+    modalContent.prepend(nom);
+    modalContent.prepend(nomTexte);
+    let btn = document.createElement("button");
+    btn.textContent = "Confirmer";
+    modalContent.append(btn);
+    let connection = document.getElementById("connection");
+    connection.style.display = "none";
+    createAccount.style.display = "none";
+    let br = document.getElementsByClassName("br");
+    btn.onclick = function () {
+        modal.style.display = "none";
+        passwordTexte.remove();
+        password.remove();
+        prenomTexte.remove();
+        nom.remove();
+        prenom.remove();
+        nomTexte.remove();
+        connection.style.display = "inline-block";
+        createAccount.style.display = "inline-block";
+        btn.remove();
+    };
+    // When the user clicks anywhere outside of the modal, close it
+
+
+});
+
+window.onclick = function (e) {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+    if (e.target == containerVideo) {
+        containerVideo.style.display = "none";
+        playBtn.style.display = "block"
+    }
+};

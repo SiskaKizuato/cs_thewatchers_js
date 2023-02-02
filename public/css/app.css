@@ -10771,6 +10771,10 @@ a {
   left: 0;
 }
 
+#profileBtn:hover {
+  color: red;
+}
+
 #iconBlack {
   display: block;
 }
@@ -11078,11 +11082,48 @@ a {
     margin-right: 20px;
   }
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .section1 {
   width: 100%;
   height: 780px;
   box-sizing: border-box;
   display: flex;
+  overflow: hidden;
 }
 
 .s1PartLeft {
@@ -11107,9 +11148,15 @@ a {
   line-height: 20px;
 }
 
-.s1PartRight {
+.containerS1PartRight {
+  overflow: hidden;
   height: 100%;
   width: 30%;
+}
+
+.s1PartRight {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -11117,8 +11164,27 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation: s1PartRight-animated 1s ease infinite alternate;
+          animation: s1PartRight-animated 1s ease infinite alternate;
 }
 
+@-webkit-keyframes s1PartRight-animated {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes s1PartRight-animated {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .containerShopNow {
   width: 100%;
   height: 18%;
@@ -11609,7 +11675,7 @@ a {
   box-sizing: border-box;
   width: 100%;
   height: 580px;
-  background-image: url("../../public/img/gallery01.png");
+  background: url("../../public/img/gallery01.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11617,11 +11683,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.5s;
 }
 
 .section5:hover {
-  filter: brightness(60%);
+  background: linear-gradient(rgba(37, 37, 37, 0.304), rgba(30, 28, 54, 0.304)), url("../../public/img/gallery01.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .playBtn {
@@ -11654,6 +11723,19 @@ a {
 .arrowS5 {
   width: 25px;
   height: auto;
+}
+
+.containerVideo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  display: none;
+  border: 2px solid #f61f1f;
 }
 
 .section6 {

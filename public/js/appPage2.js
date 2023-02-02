@@ -406,7 +406,6 @@ containerBtnS3P2.addEventListener('click', function () {
 
 
 // btnUp et nav fixed
-
 let mybutton = document.getElementById("myBtn");
 
 window.onscroll = function() {
