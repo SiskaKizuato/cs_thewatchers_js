@@ -893,7 +893,13 @@ a {
   background-image: url("../../public/img/gallery1.png");
   background-repeat: no-repeat;
   background-position: left;
+  background-size: 135%;
+  transition: ease-in-out 0.5s;
+}
+
+.s3LeftPart:hover {
   background-size: 130%;
+  filter: brightness(80%);
 }
 
 .s3RightPart {
@@ -911,7 +917,13 @@ a {
   background-image: url("../../public/img/gallery2.png");
   background-repeat: no-repeat;
   background-position: left;
+  background-size: 140%;
+  transition: ease-in-out 0.5s;
+}
+
+.s3RightPartA:hover {
   background-size: 130%;
+  filter: brightness(80%);
 }
 
 .s3RightPartB {
@@ -930,7 +942,13 @@ a {
   background-image: url("../../public/img/gallery3.png");
   background-repeat: no-repeat;
   background-position: left;
+  background-size: 140%;
+  transition: ease-in-out 0.5s;
+}
+
+.s3RightPartBup:hover {
   background-size: 130%;
+  filter: brightness(80%);
 }
 
 .s3RightPartBDown {
@@ -940,6 +958,12 @@ a {
   background-image: url("../../public/img/gallery4.png");
   background-repeat: no-repeat;
   background-position: left;
+  background-size: 140%;
+  transition: ease-in-out 0.5s;
+}
+
+.s3RightPartBDown:hover {
+  filter: brightness(80%);
   background-size: 130%;
 }
 
