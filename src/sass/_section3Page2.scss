@@ -1,3 +1,10 @@
+p {
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
 .section3Page2 {
     width: 100%;
     height: 680px;
@@ -42,9 +49,11 @@
     width: 33.33%;
     height: 95%;
 }
-#quantity{
+
+#quantity {
     color: white;
 }
+
 .quantity {
     padding-bottom: 45px;
 
@@ -53,7 +62,8 @@
 .prixP2 {
     padding-bottom: 45px;
 }
-.containerBtnS3P2{
+
+.containerBtnS3P2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +73,8 @@
     border-radius: 5px;
     cursor: pointer;
 }
-#btnS3P2{
+
+#btnS3P2 {
     background-color: none;
     color: #2577fd;
     display: flex;
@@ -71,12 +82,13 @@
     align-items: center;
 }
 
-.boxMoins{
+.boxMoins {
     height: 100%;
     width: 33.33%;
     cursor: pointer;
 }
-.boxPlus{
+
+.boxPlus {
     height: 100%;
     width: 33.33%;
     cursor: pointer;

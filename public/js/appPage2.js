@@ -324,7 +324,7 @@ btnInputS4P2.addEventListener("click", function () {
 });
 
 // carrousel
-document.body.onload = function() {
+document.body.onload = function () {
     let nbr = 3;
     let p = 0;
     let containerCarrousel = document.getElementById("containerCarrousel");
@@ -337,29 +337,63 @@ document.body.onload = function() {
         div.style.backgroundImage = "url('../img/carousel" + i + ".png')";
         containerCarrousel.appendChild(div);
     }
-    g.onclick = function() {
-        if (p > -(nbr-1)) {
+    g.onclick = function () {
+        if (p > -(nbr - 1)) {
             p--;
-            containerCarrousel.style.transform = "translate(" + p*945 + "px)";
+            containerCarrousel.style.transform = "translate(" + p * 945 + "px)";
             containerCarrousel.style.transition = "all 0.5s ease";
         } else {
             p = 0;
-            containerCarrousel.style.transform = "translate(" + p*945 + "px)";
+            containerCarrousel.style.transform = "translate(" + p * 945 + "px)";
             containerCarrousel.style.transition = "all 0.5s ease";
         }
     }
-    d.onclick = function() {
+    d.onclick = function () {
         if (p < 0) {
             p++;
-            containerCarrousel.style.transform = "translate(" + p*945 + "px)";
+            containerCarrousel.style.transform = "translate(" + p * 945 + "px)";
             containerCarrousel.style.transition = "all 0.5s ease";
         } else {
-            p = -(nbr-1);
-            containerCarrousel.style.transform = "translate(" + p*945 + "px)";
+            p = -(nbr - 1);
+            containerCarrousel.style.transform = "translate(" + p * 945 + "px)";
             containerCarrousel.style.transition = "all 0.5s ease";
         }
     }
 }
 
+// section 3 
 
+const boxPlus = document.querySelector('.boxPlus');
+const boxMoins = document.querySelector('.boxMoins');
+const quantity = document.querySelector('#quantity');
+const prixP2 = document.querySelector('.prixP2');
+const containerBtnS3P2 = document.querySelector('.containerBtnS3P2');
 
+let quantiteTotale;
+let total;
+
+boxPlus.addEventListener('click', function () {
+    let currentQuantity = parseInt(quantity.textContent);
+    currentQuantity++;
+    quantity.textContent = currentQuantity;
+
+    let currentPrix = parseInt(prixP2.textContent.slice(1));
+    currentPrix += 5;
+    prixP2.textContent = '$' + currentPrix;
+});
+
+boxMoins.addEventListener("click", function () {
+    if (parseInt(quantity.innerHTML) > 0) {
+        quantity.innerHTML = parseInt(quantity.innerHTML) - 1;
+
+        let currentPrix = parseInt(prixP2.textContent.slice(1));
+        currentPrix -= 5;
+        prixP2.textContent = '$' + currentPrix;
+    }
+});
+
+containerBtnS3P2.addEventListener('click', function () {
+    quantiteTotale = parseInt(quantity.textContent);
+    total = parseInt(prixP2.textContent.slice(1));
+    console.log("quantite : "+quantiteTotale,"; total : $"+total);
+});
