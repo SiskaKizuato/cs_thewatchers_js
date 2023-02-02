@@ -160,6 +160,7 @@ boule.addEventListener('click', () => {
     // iconWhite[0].style.display = modeBlanc ? 'none' : 'block'
     // iconWhite[1].style.display = modeBlanc ? 'none' : 'block'
     // iconWhite[2].style.display = modeBlanc ? 'none' : 'block'
+    btn.style.color = modeBlanc ? 'black' : 'white'
 
     bgDropDown[0].style.backgroundColor = modeBlanc ? 'white' : 'black'
     bgDropDown[1].style.backgroundColor = modeBlanc ? 'white' : 'black'
