@@ -10703,7 +10703,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-left: 70px;
-  padding-right: 20px;
+  padding-right: 0px;
   background-color: white;
 }
 
@@ -10728,7 +10728,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
   cursor: pointer;
   height: 100%;
   margin-right: 20px;
@@ -10762,6 +10762,30 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+#profileBtn {
+  height: 40px;
+  width: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#searchBtn {
+  height: 40px;
+  width: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#cartBtn {
+  height: 40px;
+  width: 30px;
+  display: flex;
+  justify-content: right;
   align-items: center;
 }
 

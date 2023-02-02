@@ -14,6 +14,8 @@ const btnAbout = document.querySelector('.btnAbout');
 
 const midNavBtnContact = document.querySelector('.midNavBtnContact')
 const btnContact = document.querySelector('.btnContact');
+let btn = document.getElementById("profileBtn");
+
 
 // dropdown Latest
 const containerDdLatest = document.querySelector('.containerDdLatest');
@@ -133,8 +135,8 @@ const boule = document.getElementsByClassName('boule')[0]
 
 const paragraphs = document.getElementsByTagName('p');
 
-const iconWhite = document.querySelectorAll('#iconWhite')
-const iconRed = document.querySelectorAll('#iconRed')
+// const iconWhite = document.querySelectorAll('#iconWhite')
+// const iconRed = document.querySelectorAll('#iconRed')
 const linkNav = document.querySelectorAll('.linkNav')
 const bgDropDown = document.querySelectorAll('.bgDropDown')
 
@@ -155,9 +157,10 @@ boule.addEventListener('click', () => {
     barre.style.borderColor = modeBlanc ? 'black' : 'white'
     barre.style.justifyContent = modeBlanc ? 'right' : 'left'
     boule.style.right = modeBlanc ? '-1px' : '1px'
-    iconWhite[0].style.display = modeBlanc ? 'none' : 'block'
-    iconWhite[1].style.display = modeBlanc ? 'none' : 'block'
-    iconWhite[2].style.display = modeBlanc ? 'none' : 'block'
+    // iconWhite[0].style.display = modeBlanc ? 'none' : 'block'
+    // iconWhite[1].style.display = modeBlanc ? 'none' : 'block'
+    // iconWhite[2].style.display = modeBlanc ? 'none' : 'block'
+
     bgDropDown[0].style.backgroundColor = modeBlanc ? 'white' : 'black'
     bgDropDown[1].style.backgroundColor = modeBlanc ? 'white' : 'black'
     bgDropDown[2].style.backgroundColor = modeBlanc ? 'white' : 'black'
@@ -187,32 +190,32 @@ boule.addEventListener('click', () => {
 });
 
 // icon nav hover en mode dark
-iconWhite[0].addEventListener('mouseover', function () {
-    iconWhite[0].style.display = 'none'
-    iconRed[0].style.display = 'block'
-})
-iconWhite[0].addEventListener('mouseout', function () {
-    iconRed[0].style.display = 'none'
-    iconWhite[0].style.display = 'block'
-})
+// iconWhite[0].addEventListener('mouseover', function () {
+//     iconWhite[0].style.display = 'none'
+//     iconRed[0].style.display = 'block'
+// })
+// iconWhite[0].addEventListener('mouseout', function () {
+//     iconRed[0].style.display = 'none'
+//     iconWhite[0].style.display = 'block'
+// })
 
-iconWhite[1].addEventListener('mouseover', function () {
-    iconWhite[1].style.display = 'none'
-    iconRed[1].style.display = 'block'
-})
-iconWhite[1].addEventListener('mouseout', function () {
-    iconRed[1].style.display = 'none'
-    iconWhite[1].style.display = 'block'
-})
+// iconWhite[1].addEventListener('mouseover', function () {
+//     iconWhite[1].style.display = 'none'
+//     iconRed[1].style.display = 'block'
+// })
+// iconWhite[1].addEventListener('mouseout', function () {
+//     iconRed[1].style.display = 'none'
+//     iconWhite[1].style.display = 'block'
+// })
 
-iconWhite[2].addEventListener('mouseover', function () {
-    iconWhite[2].style.display = 'none'
-    iconRed[2].style.display = 'block'
-})
-iconWhite[2].addEventListener('mouseout', function () {
-    iconRed[2].style.display = 'none'
-    iconWhite[2].style.display = 'block'
-})
+// iconWhite[2].addEventListener('mouseover', function () {
+//     iconWhite[2].style.display = 'none'
+//     iconRed[2].style.display = 'block'
+// })
+// iconWhite[2].addEventListener('mouseout', function () {
+//     iconRed[2].style.display = 'none'
+//     iconWhite[2].style.display = 'block'
+// })
 
 // icon footer hover en mode dark
 footerIconW[0].addEventListener('mouseover', function () {
@@ -337,10 +340,10 @@ document.body.onload = function () {
     let d = document.getElementById("d");
     containerCarrousel.style.width = (945 * nbr) + "px";
     for (let i = 1; i <= nbr; i++) {
-        let div = document.createElement("div");
-        div.className = "photo";
-        div.style.backgroundImage = "url('../img/carousel" + i + ".png')";
-        containerCarrousel.appendChild(div);
+        let div2 = document.createElement("div");
+        div2.className = "photo";
+        div2.style.backgroundImage = "url('../img/carousel" + i + ".png')";
+        containerCarrousel.appendChild(div2);
     }
     g.onclick = function () {
         if (p > -(nbr - 1)) {
@@ -427,3 +430,79 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+// modal
+
+// Get the modal
+let modal = document.getElementById("myModal");
+
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+// get the button creat account
+let createAccount = document.getElementById("inscription");
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+};
+
+
+
+
+
+createAccount.addEventListener("click", function () {
+    let modalContent = document.getElementsByClassName("modal-content")[0];
+    let nom = document.createElement("input");
+    let prenom = document.createElement("input");
+    let password = document.createElement("input");
+    password.setAttribute("type", "password");
+    let nomTexte = document.createElement("p");
+    nomTexte.textContent = "nom";
+    let prenomTexte = document.createElement("p");
+    prenomTexte.textContent = "prenom";
+    let passwordTexte = document.createElement("p");
+    passwordTexte.textContent = "password";
+    let div = document.getElementById("confirmerPassword");
+
+    div.append(passwordTexte);
+    div.append(password);
+    modalContent.prepend(prenom);
+    modalContent.prepend(prenomTexte);
+    modalContent.prepend(nom);
+    modalContent.prepend(nomTexte);
+    let btn = document.createElement("button");
+    btn.textContent = "Confirmer";
+    modalContent.append(btn);
+    let connection = document.getElementById("connection");
+    connection.style.display = "none";
+    createAccount.style.display = "none";
+    let br = document.getElementsByClassName("br");
+    btn.onclick = function () {
+        modal.style.display = "none";
+        passwordTexte.remove();
+        password.remove();
+        prenomTexte.remove();
+        nom.remove();
+        prenom.remove();
+        nomTexte.remove();
+        connection.style.display = "inline-block";
+        createAccount.style.display = "inline-block";
+        btn.remove();
+    };
+    // When the user clicks anywhere outside of the modal, close it
+
+
+});
+
+window.onclick = function (e) {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+};
