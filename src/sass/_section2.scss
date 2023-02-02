@@ -17,13 +17,20 @@
     width: 100%;
     height: 7%;
 }
+.divContientImg{
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 62%;
+}
 
 .container3img{
     box-sizing: border-box;
     width: 100%;
-    height: 93%;
+    height: 100%;
     display: flex;
     gap : 24px;
+    overflow: hidden;
 }
 
 .containerImgPrix{
@@ -44,18 +51,30 @@
     background-position: center;
     background-size: cover;
     border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cadreImgS2:hover{
+    transform: scale(1.05);
 }
 
 .product1{
     background-image: url("../../public/img/new_product1.png");
+    // background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .product2{
     background-image: url("../../public/img/new_product2.png");
+    width: 100%;
+    height: 100%;
 }
 
 .product3{
     background-image: url("../../public/img/new_product3.png");
+    width: 100%;
+    height: 100%;
 }
 
 .txtS2{
@@ -72,3 +91,4 @@
     width: 100%;
     text-align: center;
 }
+

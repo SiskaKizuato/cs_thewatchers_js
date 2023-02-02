@@ -150,10 +150,14 @@ for (let i = 1; i <= 3; i++) {
     videS2.classList.add("videS2");
     containerImgPrix.appendChild(videS2);
 
+    let divContientImg = document.createElement("div")
+    divContientImg.classList.add("divContientImg")
+    containerImgPrix.appendChild(divContientImg)
+
     let cadreImgS2 = document.createElement("div");
     cadreImgS2.classList.add("cadreImgS2");
     cadreImgS2.classList.add("product" + i);
-    containerImgPrix.appendChild(cadreImgS2);
+    divContientImg.appendChild(cadreImgS2);
 
     let txtS2 = document.createElement("div");
     txtS2.classList.add("txtS2");
