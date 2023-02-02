@@ -122,6 +122,7 @@ const footerIconR = document.querySelectorAll('#footerIconR')
 const footerIconB = document.querySelectorAll('#footerIconB')
 
 const titreFooter = document.querySelectorAll('.titreFooter')
+let header = document.getElementsByTagName("header")
 
 
 // mode lightdark
@@ -141,10 +142,13 @@ const a = document.getElementsByTagName('a')
 
 let modeBlanc = true;
 
+
+
 boule.addEventListener('click', () => {
 
     // navbar
     modeBlanc = !modeBlanc;
+    header[0].style.backgroundColor = modeBlanc ? 'white' : 'black';
     document.body.style.backgroundColor = modeBlanc ? 'white' : 'black';
     barre.style.backgroundColor = modeBlanc ? '#a02424ca' : 'rgb(135, 206, 235)'
     barre.style.borderColor = modeBlanc ? 'black' : 'white'
@@ -415,6 +419,23 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// tentative nav
+window.onscroll = function () { navPos() };
+
+function navPos() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        header[0].style.position = "fixed"
+    } else {
+        header[0].style.position = "relative";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function navMid() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
