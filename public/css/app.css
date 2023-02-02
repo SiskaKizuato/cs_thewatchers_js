@@ -11924,6 +11924,11 @@ footer {
   top: 50%;
   background-color: rgba(156, 187, 236, 0.462745098);
   border-radius: 50px;
+  transition: 0.5s;
+}
+
+.btnCarrousel:hover {
+  background-color: rgba(61, 95, 150, 0.462745098);
 }
 
 #g {
