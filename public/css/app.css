@@ -1332,9 +1332,10 @@ footer {
 .photo {
   width: 945px;
   height: 695px;
-  margin: 0;
   display: inline-block;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btnCarrousel {
