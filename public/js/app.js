@@ -239,7 +239,7 @@ const a = document.getElementsByTagName('a')
 let modeBlanc = true;
 
 boule.addEventListener('click', () => {
-    
+
     // navbar
     modeBlanc = !modeBlanc;
     document.body.style.backgroundColor = modeBlanc ? 'white' : 'black';
@@ -434,3 +434,24 @@ document.querySelectorAll(".divWatch")[4].addEventListener("click", function () 
 document.querySelectorAll(".divWatch")[5].addEventListener("click", function () {
     window.location.assign("./public/pages/page2.html");
 });
+
+
+// btnUp
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
