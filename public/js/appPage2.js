@@ -427,7 +427,7 @@ function topFunction() {
 window.onscroll = function () { navPos() };
 
 function navPos() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         header[0].style.position = "fixed"
     } else {
         header[0].style.position = "relative";
