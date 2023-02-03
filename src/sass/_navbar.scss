@@ -103,36 +103,44 @@ a {
     justify-content: center;
     align-items: center;
 }
-#profileBtn{
+
+#profileBtn {
     height: 40px;
     width: 30px;
     display: flex;
     justify-content: right;
     align-items: center;
 }
-#searchBtn{
+
+#searchBtn {
     height: 40px;
     width: 30px;
     display: flex;
     justify-content: right;
     align-items: center;
 }
-#cartBtn{
+
+#cartBtn {
     height: 40px;
     width: 30px;
     display: flex;
     justify-content: right;
     align-items: center;
 }
-#profileBtn:hover{
+
+#profileBtn:hover {
     color: #f61f1f;
 }
-#searchBtn:hover{
-    color : #f61f1f;
-}
-#cartBtn:hover{
+
+#searchBtn:hover {
     color: #f61f1f;
 }
+
+#cartBtn:hover {
+    color: #f61f1f;
+}
+
+
 
 .rightNavBtn:hover #iconBlack {
     display: none;
