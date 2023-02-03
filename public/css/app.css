@@ -11697,7 +11697,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: ease-in-out 0.5s;
 }
 
 .section5:hover {
