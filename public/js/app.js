@@ -261,7 +261,7 @@ boule.addEventListener('click', () => {
     btn.addEventListener('mouseover', function () {
         btn.style.color = '#f61f1f'
     })
-    
+
     btn.addEventListener('mouseout', function () {
         btn.style.color = 'white'
     })
@@ -478,17 +478,25 @@ function topFunction() {
 
 // youtube
 // playBtn.addEventListener('click', () => {
-    
+
 // })
 let containerVideo = document.querySelector(".containerVideo")
 
 
-playBtn.onclick = function () {
-    playBtn.style.display = "none"
-    iFrame[0].style.display = "block"
-    containerVideo.style.backgroundColor = "rgba(255, 166, 0, 0.272)"
-}
 
+playBtn.onclick = function () {
+    playBtn.style.display = "none";
+    iFrame[0].style.display = "block";
+    containerVideo.style.backgroundColor = "rgba(255, 166, 0, 0.272)";
+};
+
+containerVideo.onclick = function (event) {
+    if (event.target !== iFrame[0]) {
+        playBtn.style.display = "block";
+        iFrame[0].style.display = "none";
+        containerVideo.style.backgroundColor = "transparent";
+    }
+};
 // modal
 
 // Get the modal
@@ -561,9 +569,5 @@ createAccount.addEventListener("click", function () {
 window.onclick = function (e) {
     if (e.target == modal) {
         modal.style.display = "none";
-    }
-    if (e.target == containerVideo) {
-        containerVideo.style.display = "none";
-        playBtn.style.display = "block"
     }
 };
