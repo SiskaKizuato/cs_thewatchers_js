@@ -161,6 +161,14 @@ boule.addEventListener('click', () => {
     // iconWhite[1].style.display = modeBlanc ? 'none' : 'block'
     // iconWhite[2].style.display = modeBlanc ? 'none' : 'block'
     btn.style.color = modeBlanc ? 'black' : 'white'
+    btn.addEventListener('mouseover', function () {
+        btn.style.color = '#f61f1f'
+    })
+    
+    btn.addEventListener('mouseout', function () {
+        btn.style.color = 'white'
+    })
+
 
     bgDropDown[0].style.backgroundColor = modeBlanc ? 'white' : 'black'
     bgDropDown[1].style.backgroundColor = modeBlanc ? 'white' : 'black'
