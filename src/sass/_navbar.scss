@@ -43,7 +43,9 @@ nav {
     padding-left: 70px;
     padding-right: 0px;
     background-color: white;
-
+}
+.navResponsive{
+    display: none;
 }
 
 .leftPartNav {
@@ -410,7 +412,7 @@ a {
 // mobile M
 @media screen and (min-width: 374px) and (max-width: 424px) {
     header {
-        width: fit-content;
+        width: 375px;
         height: fit-content;
         box-sizing: border-box;
         border: 1px solid red;
@@ -421,7 +423,30 @@ a {
     }
 
     .navResponsive{
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        border: 1px solid green;
+        display: block;
+    }
 
+    .rowResponsive{
+        box-sizing: border-box;
+        width: 100%;
+        height: 80px;
+        border: 1px solid black;
+        display: flex;
+        gap : 8px;
+    }
+
+    .fonctionsRow1{
+        box-sizing: border-box;
+        border: 1px solid blue;
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     // nav {
