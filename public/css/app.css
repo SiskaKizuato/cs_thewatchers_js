@@ -11126,6 +11126,12 @@ a {
     justify-content: center;
     align-items: center;
   }
+  .red:active .fRed {
+    color: red;
+  }
+  .linkNav:hover {
+    color: black;
+  }
 }
 .modal {
   display: none;
